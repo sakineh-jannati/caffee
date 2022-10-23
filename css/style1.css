@@ -81,7 +81,47 @@ header .submenu:hover {
     background-color: #804224;
     border-color:#804224 ;
 }
-@media screen and (min-width:992px ) and (max-width:1360px ) {
+#slider {
+    margin: 20px auto;
+    position: relative;
+}
+
+#slider img {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    transition: all .5s;
+}
+.nav3{
+    display: none;
+}
+#button_slider{
+    width: 170px;
+    height: 40px;
+    background-color: #5c260b;
+    position: absolute;
+    top:260px;
+    right:30px;
+   z-index: 1;
+    border-radius: 10px;
+    border:3px solid #eeeeee;
+    color: #eeeeee;
+    font-weight:bold;
+}
+#hedder{
+    width: 250px;
+    height: 300px;
+    height: 60px;
+    font-size: 30px;
+    font-weight:bold;
+    color:#5c260b;
+    z-index: 1;
+    position: absolute;
+    top:160px;
+    right:30px;
+   text-shadow:5px 0px #eeeeee;
+}
+@media screen and (min-width:992px )  {
     .navbar-toggler , .offcanvas-header ,#email,.login,.d-flex {
         display: none!important;
     }
@@ -89,6 +129,7 @@ header .submenu:hover {
         width: 50px;
         height: 60px;
         margin-right: 10px;
+
     }
     .nav2{
         margin: 7px;
@@ -100,9 +141,45 @@ header .submenu:hover {
         font-size: 17px;
         margin-right: 10px;
     }
+
+    #slider img {
+        width: 1400px;
+        height: 520px;
+    }
+    #button_slider{
+        width: 200px;
+        height: 60px;
+        top:420px;
+        right:100px;
+    }
+    #hedder{
+        width: 400px;
+        height: 60px;
+        font-size: 50px;
+        top:260px;
+        right:100px;
+    }
 }
-@media screen and (max-width:992px) {
+@media screen and (min-width:481px) and (max-width:992px ) {
     .nav3{
         display: none;
     }
+    #slider img {
+        width: 992px;
+        height: 400px;
+    }
+    #button_slider{
+        width: 200px;
+        height: 60px;
+        top:340px;
+        right:50px;
+    }
+    #hedder{
+        width: 300px;
+        height: 60px;
+        font-size: 35px;
+        top:220px;
+        right:50px;
+    }
 }
+
