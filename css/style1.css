@@ -208,25 +208,25 @@ a {
     justify-content: center;
 }
 #make{
-    width: 900px;
-    height: 300px;
+    width: 400px;
+    height: 170px;
     display: flex;
     position: absolute;
-    top:620px;
-    margin-right: 100px;
+    top:1600px;
+    margin-right: 0px;
     box-shadow: 1px 1px 6px 2px #bdbebd;
     margin-bottom: 100px;
 }
 #make_h{
-    font-size: 30px;
-    margin-right: 100px;
-    margin-top: 40px;
+    font-size: 15px;
+    margin-right: 4px;
+    margin-top: 20px;
 }
 #make_a{
     position: absolute;
-    font-size: 30px;
-    margin-right: 200px;
-    margin-top: 170px;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-top: 90px;
     color: #5c260b;
 }
 #make_a:hover{
@@ -286,6 +286,21 @@ a {
     .product1{
         margin-right: 40px;
         margin-left: auto;
+    }
+    #make{
+        width: 900px;
+        height: 300px;
+        top:600px;
+        margin-right: 100px;
+    }
+    #make_h{
+        font-size: 30px;
+        margin-right: 100px;
+    }
+    #make_a{
+        font-size: 30px;
+        margin-right: 200px;
+        margin-top: 170px;
     }
 }
 @media screen and (min-width:480px) and (max-width:992px ) {
@@ -349,6 +364,21 @@ a {
     }
     .product_click:hover #circle4{
         background-size: 900px 900px;
+    }
+    #make{
+        width: 430px;
+        height: 200px;
+        top:750px;
+        margin-right: 30px;
+    }
+    #make_h{
+        font-size: 17px;
+        margin-right: 0px;
+    }
+    #make_a{
+        font-size: 25px;
+        margin-right: 40px;
+        margin-top: 90px;
     }
 }
 
