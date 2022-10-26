@@ -24,7 +24,7 @@
 body {
     direction: rtl;!important;
     font-family: yekan;
-    background-color: #eee;
+    background-color: #ffffff;
     list-style-type: none;
 }
 input, select, textarea {
@@ -39,29 +39,8 @@ i{
 a {
     text-decoration: none;
 }
-header a {
-    display: block;/* تا کل محتوا بشود کلیک کرد*/
-    color: #333;
-    padding: 0 15px;
-    border-bottom: 1px solid #bcd;
-}
-header a:hover {
-    background-color: #bcd;
-}
-header .submenu a {
-    padding-right: 30px;
-    font-size: 14px;
-}
-header .submenu {
-    display: none;/* برای اینکه در ابتدا مخفی باشد ساب منو ها با کلیک کردن مشخص شون*/
-    background-color: #f7f7f7;
-}
-header .submenu:hover {
-    display: block;
-    background-color: #f7f7f7;
-}
-.dropdown-item{
-    text-align: right;
+.navbar{
+    box-shadow: 1px 1px 6px 2px #bdbebd;
 }
 .nav-link{
     color: #333333;
@@ -121,6 +100,139 @@ header .submenu:hover {
     right:30px;
    text-shadow:5px 0px #eeeeee;
 }
+.main{
+    position: relative;
+    top:320px;
+}
+#Title1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c260b;
+}
+#Race{
+    font-size: 15px;
+    text-align: justify;
+}
+#link{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+.product1{
+    position: absolute;
+    top:220px;
+    margin-right: 10px;
+    margin-left: 20px;
+    display:block;
+}
+.product_click{
+    top:0;
+    transition: top 500ms linear;
+}
+.product_img{
+    width: 200px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product2{
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px 2px #bdbebd;
+    margin: 7px;
+    padding: 0 !important;
+}
+.product_h{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color:#000000;
+}
+.product_p{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: justify;
+    color:#000000;
+    height: 70px;
+    overflow:hidden;
+}
+.product_price{
+    font-size: 20px;
+    text-align: center;
+    color: brown;
+}
+.product_click:hover{
+    position: relative;
+    top:-15px;
+}
+.product_click #circle1{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+    -moz-transition:background-image 3s ease-out;
+}
+.product_click:hover #circle1{
+    background-image:url("../image/circle1.png");
+    background-position: bottom ;
+    padding:0;
+}
+.product_click #circle2{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+    -moz-transition:background-image 3s ease-out;
+}
+.product_click:hover #circle2{
+    background-image:url("../image/circle2.png");
+    background-position: bottom ;
+    padding:0;
+}
+.product_click #circle3{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+    -moz-transition:background-image 3s ease-out;
+}
+.product_click:hover #circle3{
+    background-image:url("../image/circle3.png");
+    background-position: bottom ;
+    padding:0;
+}
+.product_click #circle4{
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+    -moz-transition:background-image 3s ease-out;
+}
+.product_click:hover #circle4{
+    background-image:url("../image/circle4.png");
+    background-position: bottom ;
+    padding:0;
+}
+.wrapper1{
+   display: flex;
+    justify-content: center;
+}
+#make{
+    width: 900px;
+    height: 300px;
+    display: flex;
+    position: absolute;
+    top:620px;
+    margin-right: 100px;
+    box-shadow: 1px 1px 6px 2px #bdbebd;
+    margin-bottom: 100px;
+}
+#make_h{
+    font-size: 30px;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+#make_a{
+    position: absolute;
+    font-size: 30px;
+    margin-right: 200px;
+    margin-top: 170px;
+    color: #5c260b;
+}
+#make_a:hover{
+    color:brown;
+}
+
 @media screen and (min-width:992px )  {
     .navbar-toggler , .offcanvas-header ,#email,.login,.d-flex {
         display: none!important;
@@ -143,7 +255,7 @@ header .submenu:hover {
     }
 
     #slider img {
-        width: 1400px;
+        width: 1350px;
         height: 520px;
     }
     #button_slider{
@@ -159,8 +271,24 @@ header .submenu:hover {
         top:260px;
         right:100px;
     }
+    .main{
+        top:550px;
+    }
+    #Title1{
+        font-size: 30px;
+    }
+    #Race{
+        font-size: 20px;
+    }
+    #link{
+        font-size: 25px;
+    }
+    .product1{
+        margin-right: 40px;
+        margin-left: auto;
+    }
 }
-@media screen and (min-width:481px) and (max-width:992px ) {
+@media screen and (min-width:480px) and (max-width:992px ) {
     .nav3{
         display: none;
     }
@@ -180,6 +308,47 @@ header .submenu:hover {
         font-size: 35px;
         top:220px;
         right:50px;
+    }
+    .main{
+        top:420px;
+    }
+    #Title1{
+        font-size: 25px;
+    }
+    #Race{
+        font-size: 15px;
+    }
+    #link{
+        font-size: 20px;
+    }
+    .product1{
+        margin-right: 40px;
+        margin-left: auto;
+    }
+    .product2{
+        margin: 5px;
+    }
+    .product_img{
+        width: 100px;
+        height: 90px;
+    }
+    .product_h{
+        font-size: 18px;
+    }
+    .product_p{
+        font-size: 13px;
+    }
+    .product_click:hover #circle1{
+        background-size: 900px 900px;
+    }
+    .product_click:hover #circle2{
+        background-size: 900px 900px;
+    }
+    .product_click:hover #circle3{
+        background-size: 900px 900px;
+    }
+    .product_click:hover #circle4{
+        background-size: 900px 900px;
     }
 }
 
